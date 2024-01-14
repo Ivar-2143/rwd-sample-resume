@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    /* margin: 0 auto; */
+    background-image: radial-gradient(white ,rgba(73, 102, 139, 0.171));
+}
+h2{
+    font-size: 1.1em;
+}
+h3{
+    font-size: 1em;
+}
+h1,h2,h3,h4{
+    font-family: 'Varela Round', sans-serif;
+}
+header{
+    min-height: 200px;
+    position: relative;
+    /* padding: 32px 16px 0 16px; */
+}
+    header img{
+        width: 100%;
+        height: 270px;
+        object-position:75%;
+        object-fit:cover;
+        z-index: 1;
+        position: relative;
+    }
+    header #blur-effect{
+        width: 100%;
+        min-height: 270px;
+        position: absolute;
+        top: 0;
+        z-index: 4;
+        padding: 0;
+        background-image: linear-gradient( rgba(255, 255, 255, 0) 75%,rgba(0, 0, 0, 0.733));
+    }
+    header h1{
+        padding: 0;
+        margin: 0;
+        /* font-size: 64px; */
+        font-size: 2em;
+        position: absolute;
+        top: 220px;
+        z-index: 6;
+        text-shadow: 2px 2px 4px #222222da;
+        color: #f5f5f5;
+    }
+    header div{
+        /* margin-left: 40px; */
+        /* width: 608px; */
+        padding: 0 24px;
+        display: block;
+    }
+        header div h2{
+            margin-top: 16px;
+        }
+        header div p {
+            display: inline-block;
+            font-size: 0.67em;
+            width: max-content;
+            vertical-align: middle;
+            white-space: wrap;
+        }
+        header div span{
+            font-size: 0.76em;
+            padding: 0 4px;
+        }
+        header div div.break-line{
+            background-color: #2f4458;
+            margin: 8px 0;
+            height: 4px;
+            border-radius: 4px;
+        }
+section{
+    min-height: 800px;
+    /* width: 912px; */
+    /* padding: 0 16px; */
+}   
+    section div {
+        margin: 32px 0;
+    }
+    section div#getting-to-know{
+        background-color: #e6e6e6;
+        padding: 24px;
+    }
+    section div#getting-to-know p{
+        margin-top: 16px;
+        /* line-height: 32px; */
+        text-align: justify;
+        /* font-size: 20px; */
+        font-weight: 300;
+        font-size: 0.9em;
+    }
+        section div article{
+            /* display: inline-block; */
+            vertical-align: top;
+            /* width: 42%; */
+            /* padding: 0px 32px; */
+            text-align: center;
+        }
+        section div article#projects{
+            margin-top: 24px;
+            padding: 32px 24px;
+            text-align: justify;
+            background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.075),white ,rgba(0, 0, 0, 0.123));
+        }
+        section div h2{
+            text-align: center;
+            margin-bottom: 16px;
+            color:#333333
+        }
+        section div img{
+            display: inline-block;
+            width: 56px;
+            margin: 8px 4px;
+        }
+            section div article h3{
+                margin-top: 32px;
+                color:#333333;
+                line-height: 32px;
+            }
+            section div article p{
+                line-height: 24px;
+                font-size: 0.9em;
+            }
+footer{
+    min-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+    footer a{
+        display: inline-block;
+        font-size: 0.8em;
+        min-height: 32px;
+        color:black;
+        margin: 0 8px;
+    }
+    footer a img{
+        width: 32px;
+        margin: 0 auto 4px auto;
+        display: block;
+    }
+@media only screen and (max-width:280px){
+    header h1{
+        font-size: 1.9em;
+    }
+}
+@media only screen and (min-width:481px){
+    body{
+        padding: 0 32px;
+        background-image: radial-gradient(white ,rgba(73, 102, 139, 0.171));
+    }
+    main{
+        background-image: none;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    header{
+        text-align: center;
+    }
+        header div{
+        }
+        header img{
+            width: 240px;
+            height: 240px;
+            border-radius: 120px;
+        }
+        header #blur-effect{
+            display:none;
+            
+        }
+        header div h1{
+            color: #2f4458;
+            position: relative;
+            text-shadow: none;
+            top: 0;
+            font-size: 2.5em;
+        }
+        header div p{
+            font-size: 1.1em;
+        }
+    section div#getting-to-know{
+        padding: 24px 24px;
+    }
+    section p{
+        line-height: 24px;
+        font-size: 1.1em;
+    }
+        section div article img{
+            width: 64px;
+        }
+    footer a{
+        font-size: 1em;
+        margin: 0 16px;
+        img{
+            width: 40px;
+        }
+    }
+        
+}
+@media only screen and (min-width:768px){
+    main{
+        max-width: max-content;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    header{
+        width: 640px;
+    }
+        header #blur-effect{
+            display:none;
+            
+        }
+        header div h1{
+            color: #2f4458;
+            position: relative;
+            text-shadow: none;
+            top: 0;
+            font-size: 2.5em;
+        }
+        header div p{
+            font-size: 1.1em;
+        }
+    section{
+        width: 640px;
+    }
+    section div#getting-to-know{
+        padding:40px 32px;
+    }
+    section div article{
+        padding: 0 40px;
+    }
+        section div article img{
+            width: 64px;
+        }
+        section div article#projects{
+            padding: 24 32px;
+        }
+    footer{
+        width: 640px;
+        
+    }
+        footer a{
+            font-size: 1em;
+            margin: 0 16px;
+            
+        }
+        footer a img{
+            width: 40px;
+        }
+}
+@media only screen and (min-width:1024px){
+    body{
+        background: none;
+    }
+    main{
+        width: 970px;
+        padding: 24px;
+        background-image: radial-gradient(white ,rgba(73, 102, 139, 0.171));
+    }
+    header,section,footer{
+        width: 100%;
+    }
+    h2{
+        font-size: 1.75em;
+    }
+    header{
+        text-align: left;
+    }
+        header img{
+            border-radius: 0;
+            height: 220px;
+            width: 260px;
+            display: inline-block;
+        }
+        header div{
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 266px);
+            padding: 0 0 0 40px;
+        }
+            header div h1{
+                font-size: 4em;
+            }
+            header div p {
+                font-size: 1.1em;
+            }
+            header div span{
+                font-size: 0.9em;
+                margin: 0 8px;
+            }
+            header div div.break-line{
+                background-color: #2f4458;
+                margin: 32px 0;
+                height: 4px;
+                border-radius: 4px;
+                width: 100%;
+            }
+    section div#getting-to-know p{
+        line-height: 32px;
+        font-size: 1.2em;
+    }
+    section div article{
+        width: 50%;
+        padding: 0;
+        display: inline-block;
+        padding: 24px 32px;
+    }
+    footer{
+        min-height: 80px;
+        width: max-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer a{
+        display: inline-block;
+        margin: 0 12px;
+        min-height: 32px;
+        color:black
+    }
+    footer a img{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 40px;
+        margin-right: 4px;
+    }
+}
